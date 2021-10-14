@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: rgb(82, 82, 82);
+}
+
+.container{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+
+}
+
+.card {
+    width: 450px;
+    height: 550px;
+    background-color: rgb(40, 41, 41);
+    border-radius: 30px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: .7s;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 13px 16px 20px 9px rgb(16 16 16 / 47%);
+
+}
+.header {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 21px;
+    color: #fff;
+}
+.header h1 {
+    padding-top: 43px;
+    padding-bottom: 0;
+}
+.box {
+    text-align: center;
+    margin-top: 42px;
+    border-radius: 30px;
+    
+   
+}
+.box input {
+    border: 0;
+    font-size: 24px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: 3px solid #3898db;
+    width: 50%;
+    transition: .7s;
+    outline: none;
+    
+}
+:focus {
+    border-radius: 30px;
+}
+.forget {
+    text-align: center;
+    margin-top: 7px;
+    margin-left: 45%;
+}
+.forget a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 16px;
+}
+.forget a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+::placeholder {
+   font-size: 18px;
+}
+button {
+    padding: 10px 30px;
+    text-align: center;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 24px;
+    border: 2px solid #3898db;
+    margin-left: 37%;
+    margin-top: 72px;
+    transition: .7s;
+    font-weight: bold;
+}
+
+button:hover {
+    background: rgb(255, 208, 54);
+}
+
+    
+
+.card:hover {
+    box-shadow: inset -20px -6px 20px 10px rgb(0 0 0 / 40%);
+    box-shadow: 8px 18px 20px 8px rgb(0 0 0 / 40%);
+}
+
+.card::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    background: rgb(251, 156, 101);
+    border-radius: 30px;
+    z-index: -1;
+    transition: .7s;
+}
+.card:hover.card::after{
+    height: 100%;
+}
+.card:hover.card h1 {
+    color: rgb(53, 52, 52);
+}
+.card:hover.card button {
+    color: rgb(53, 52, 52);
+    border: 2px solid rgb(255, 208, 54);
+}
+.card:hover.card a {
+    color: rgb(53, 52, 52);
+    
+}
+
+.card input[type='email']:hover {
+    width: 80%;
+    border: 3px solid #2ecc71;
+}
+.card input[type='password']:hover {
+    width: 80%;
+}  
+
+.h1 {
+    font-size: 24px;
+    text-align: center;
+    color: rgb(255, 255, 253);
+}
+
